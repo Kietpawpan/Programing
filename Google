@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <title>MONTE CHROME</title>
+  <hta:application ID=""Monte"
+ 	applicationname="myApp" 
+	scroll="yes" 
+	singleinstance="yes"
+	icon="..\image\Gicon.ico">
+
+  <script type="text/javascript">
+    function openURL()
+    {
+      var shell = new ActiveXObject("WScript.Shell");
+      shell.run("Chrome http://www.google.com");
+    }
+  </script>
+</head>
+
+<body>
+<br><br><br>
+<center>
+<input type="button" onclick="openURL()" value="Open Google in Chrome">
+</center>
+
+</body>
+</html>
